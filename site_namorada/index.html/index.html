@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Para Minha Namorada 💖</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 50px;
+        }
+        .emoji-box {
+            font-size: 2rem;
+            margin-top: 10px;
+        }
+        .frases-romanticas, .regras {
+            margin-top: 20px;
+            font-weight: bold;
+            color: #d35400;
+        }
+        .frases-romanticas p, .regras p {
+            font-size: 1.2rem;
+            color: black;
+        }
+        .eu-te-amo {
+            font-size: 2rem;
+            font-weight: bold;
+            color: red;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Oi, meu amor! 💖</h1>
+
+    <p>Clique no link abaixo para ouvir uma música especial para você:</p>
+    <a href="https://youtu.be/zrzSHLmChfg?si=ggeAZ7G2uyIJnACh" target="_blank">🎶 Ouvir música no YouTube 🎶</a>
+
+    <h2>Escolha seu humor:</h2>
+    <select id="emoji">
+        <option value="">-- Escolha um emoji --</option>
+        <option value="😊">😊</option>
+        <option value="😢">😢</option>
+        <option value="😡">😡</option>
+        <option value="😂">😂</option>
+        <option value="😍">😍</option>
+        <option value="😴">😴</option>
+        <option value="🤔">🤔</option>
+        <option value="🥳">🥳</option>
+        <option value="😭">😭</option>
+        <option value="🤯">🤯</option>
+    </select>
+
+    <div class="emoji-box" id="emojiSelecionado"></div>
+
+    <div class="frases-romanticas">💌 Frases para você 💌</div>
+    <p>🌹 "O melhor lugar do mundo é dentro do seu abraço."</p>
+    <p>💖 "Cada momento ao seu lado é um presente da vida."</p>
+    <p>✨ "Seu sorriso ilumina meu dia mais que o sol."</p>
+    <p>🎶 "Te amar é como uma música que nunca sai da cabeça."</p>
+    <p>💑 "Meu amor por você só cresce a cada dia."</p>
+
+    <div class="regras">📜 Regrinhas das Tretas kk</div>
+    <p>🔹 Nunca durma chateado um com o outro.</p>
+    <p>🔹 Resolver qualquer coisa na base da conversa.</p>
+    <p>🔹 não gostou de algo, falar na hora.</p>
+
+    <div class="eu-te-amo">❤️ EU TE AMO ❤️</div>
+
+    <script>
+        document.getElementById("emoji").addEventListener("change", function() {
+            const emojiSelecionado = document.getElementById("emoji").value;
+            document.getElementById("emojiSelecionado").innerText = emojiSelecionado;
+        });
+    </script>
+
+</body>
+</html>
+<script>
+    function criarCoracao() {
+        const heart = document.createElement("div");
+        heart.innerHTML = "❤️";
+        heart.classList.add("heart");
+        heart.style.left = Math.random() * 100 + "vw";
+        heart.style.animationDuration = Math.random() * 2 + 3 + "s";
+        document.body.appendChild(heart);
+
+        setTimeout(() => {
+            heart.remove();
+        }, 5000);
+    }
+
+    setInterval(criarCoracao, 500);
+</script>
+<p class="typing">"Você é incrivel!"</p>
+<a href="https://youtu.be/xFJjczkU4So?si=K7P5wa02sZ3W1iax" target="_blank" class="youtube-link">
+    🎶 outra musica! ❤️
+</a>
+<p class="mensagem-amor">💖 Vamos demonstrar nosso amor, porque é importante, e fazer dar certo! 💖</p>
+
+<p style="font-size: 18px; color: #ff4d6d; text-align: center; font-weight: bold;">
+    📢 O grupo de WhatsApp que foi criado só vale emoji, ou para dizer algo que não precise de resposta, e não pode comentar o que foi escrito, é um arquivo confidencial
+</p>
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eu te amo em várias línguas</title>
+    <style>
+        body {
+            background-color: #ffe6f2;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 20px;
+        }
+        h2 {
+            color: #ff3366;
+            font-size: 28px;
+        }
+        .amor-box {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+            display: inline-block;
+        }
+        p {
+            font-size: 20px;
+            color: #d6336c;
+            font-weight: bold;
+            margin: 5px 0;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>💖 Eu te amo em outras línguas 💖</h2>
+
+    <div class="amor-box">
+        <p>🇺🇸 English: I love you</p>
+        <p>🇪🇸 Español: Te amo</p>
+        <p>🇫🇷 Français: Je t'aime</p>
+        <p>🇩🇪 Deutsch: Ich liebe dich</p>
+        <p>🇮🇹 Italiano: Ti amo</p>
+        <p>🇯🇵 日本語 (Japonês): 愛してる (Aishiteru)</p>
+        <p>🇨🇳 中文 (Chinês): 我爱你 (Wǒ ài nǐ)</p>
+        <p>🇷🇺 Русский (Russo): Я тебя люблю (Ya tebya lyublyu)</p>
+        <p>🇰🇷 한국어 (Coreano): 사랑해 (Saranghae)</p>
+        <p>🇬🇷 Ελληνικά (Grego): Σ' αγαπώ (S'agapó)</p>
+        <p>🇵🇹 Português: Eu te amo</p>
+    </div>
+
+</body>
+</html>
