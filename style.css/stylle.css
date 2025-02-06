@@ -1,0 +1,91 @@
+/* Fundo romântico com cor e imagem */
+body {
+    background: linear-gradient(to right, #ffcccc, #ff99cc); /* Degradê rosa claro */
+    background-attachment: fixed;
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    color: #d63384; /* Rosa escuro */
+}
+
+/* Criando um efeito de sobreposição */
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 192, 203, 0.4); /* Tom rosado transparente */
+    z-index: -1;
+}
+
+/* Estilizando o contêiner principal */
+.container {
+    background: rgba(255, 255, 255, 0.9); /* Branco com transparência */
+    width: 80%;
+    margin: auto;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0px 0px 15px rgba(255, 105, 180, 0.5); /* Sombra rosa */
+    position: relative;
+}
+
+/* Títulos */
+h1, h2 {
+    font-size: 2em;
+    color: #ff4081; /* Rosa vibrante */
+}
+
+/* Link da música */
+a {
+    display: inline-block;
+    background-color: #ff85a2;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+a:hover {
+    background-color: #ff5e8b;
+    transform: scale(1.05);
+}
+@keyframes coracoes {
+    0% { transform: translateY(0px) rotate(0deg); opacity: 1; }
+    100% { transform: translateY(100vh) rotate(360deg); opacity: 0; }
+}
+
+.heart {
+    position: absolute;
+    top: -10px;
+    color: red;
+    font-size: 24px;
+    opacity: 0.8;
+    animation: coracoes 4s linear infinite;
+}
+.typing {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #ff4081;
+    overflow: hidden;
+    border-right: 3px solid;
+    white-space: nowrap;
+    animation: digitar 3s steps(40) infinite alternate;
+}
+
+@keyframes digitar {
+    from { width: 0 }
+    to { width: 100% }
+}
+.mensagem-amor {
+    font-size: 22px;
+    font-weight: bold;
+    color: #ff4d6d;
+    text-align: center;
+    margin-top: 20px;
+    padding: 10px;
+    background-color: rgba(255, 192, 203, 0.2);
+    border-radius: 10px;
+}
